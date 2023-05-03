@@ -1,0 +1,42 @@
+/* sendmessages.css */
+.send-message-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 700px; /* set the maximum width of the container */
+  margin: 0 auto;
+}
+
+.send-message-input {
+  flex-grow: 1; /* make the input field expand to fill the remaining space */
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 16px;
+  color: #555;
+  background-color: #f5f5f5;
+  outline: none;
+  box-sizing: border-box; /* include padding in width */
+}
+
+.send-message-input::placeholder {
+  color: #999;
+}
+
+.send-message-input:focus::placeholder {
+  color: transparent;
+}
+
+.send-message-button {
+  border: none;
+  background-color: #1fb8fc;
+  color: white;
+  font-size: 15px;
+  font-style: bold;
+  padding: 10px;
+  border-radius: 50%;
+  margin-left: 10px;
+  width: 40px;
+  height: 40px;
+}

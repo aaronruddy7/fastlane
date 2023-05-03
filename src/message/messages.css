@@ -1,0 +1,124 @@
+.discussion {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.bubble {
+  border-radius: 1em;
+  padding: 0.25em 0.75em;
+  margin: 0.0625em;
+  max-width: 50%;
+}
+
+.bubble.sender {
+  align-self: flex-end;
+  background-color: #1fb8fc;
+  color: #fff;
+}
+
+.bubble.recipient {
+  align-self: flex-start;
+  background-color: #e5e5e5;
+}
+
+.bubble.sender.first {
+  border-bottom-left-radius: 0.1em;
+}
+
+.bubble.sender.last {
+  border-top-left-radius: 0.1em;
+}
+
+.bubble.sender.middle {
+  border-bottom-left-radius: 0.1em;
+  border-top-left-radius: 0.1em;
+}
+
+.bubble.recipient.first {
+  border-bottom-right-radius: 0.1em;
+}
+
+.bubble.recipient.last {
+  border-top-right-radius: 0.1em;
+}
+
+.bubble.recipient.middle {
+  border-bottom-right-radius: 0.1em;
+  border-top-right-radius: 0.1em;
+}
+
+ul.message-list {
+  list-style: none;
+}
+
+.username-card {
+  border-bottom: 2px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  margin-bottom: 20px;
+  padding-bottom: 2%;
+  padding-top: 2%;
+}
+
+.username {
+  font-size: 30px;
+  color: #808080;
+  text-align: center;
+}
+
+.message-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.message-timestamp {
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.message-text {
+  font-size: 16px;
+  text-align: center;
+}
+
+P {
+  flex-grow: 1; /* make the input field expand to fill the remaining space */
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 16px;
+  color: #555;
+  text-align: center;
+  outline: none;
+  box-sizing: border-box; /* include padding in width */
+}
+
+.view-profile-link {
+  color: #949494;
+  text-decoration: none;
+  font-size: 30px;
+  font-style: bold;
+}
+.messagebutton {
+  border: none;
+  background-color: #0077ff;
+  color: white;
+  font-size: 15px;
+  font-style: bold;
+  padding: 10px;
+  border-radius: 50%;
+  margin-left: 10px;
+  width: 50px;
+  height: 50px;
+}

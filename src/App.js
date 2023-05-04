@@ -13,7 +13,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Login setUserId={setUserId} />} />
+        <Route path="/login" element={<Login setUserId={setUserId} />} />
         <Route path="/matches" element={<Matches userId={userId} />} />
         <Route path="/home" element={<Home userId={userId} />} />
         <Route path="/messages/:userId/:matchId" element={<Messages />} />
